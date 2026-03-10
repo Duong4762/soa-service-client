@@ -6,6 +6,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @FeignClient(name = "service-publisher-2", path = "/")
 public interface Publisher2FeignClient {
-    @PostMapping("/api/test")
+    @PostMapping("/api/test2")
     String callTestEndpoint(@RequestBody String request);
 }
